@@ -22,11 +22,53 @@ namespace DatabaseConnectivity.Controllers
                 int pilihan = Convert.ToInt32(Console.Readline());
                 switch (pilihan)
                 {
-                    case 1 : 
-
+                    case 1 :
+                        Console.Clear();
+                        new RegionController.Menu();
+                        break;
+                    case 2 :
+                        Console.Clear();
+                        new CountryCountroller.Menu();
+                        break;
+                    case 3 :
+                        Console.Clear();
+                        new LocationController.Menu();
+                        break;
+                    case 4 :
+                        Console.Clear();
+                        new DepartmentController.Menu();
+                        break;
+                    case 5 :
+                        Console.Clear();
+                        new EmployeeController.Menu();
+                        break;
+                    case 6 :
+                        Console.Clear();
+                        new HistoryController.Menu();
+                        break;
+                    case 7 :
+                        Console.Clear();
+                        new JobsController.Menu();
+                        break;
+                    case 8 :
+                        Console.Clear();
+                        new LINQController.Menu();
+                        break;
+                    case 9:
+                        Console.Clear();
+                        new LINQ.getDepartments();
+                        break;
+                    default:
+                        Console.WriteLine("Invalid Input");
+                        break;
                 }
+                Console.ReadKey();
+                MainMenu();
             }
-
+            catch (Exception  ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
         }
     }
 }

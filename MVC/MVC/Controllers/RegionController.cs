@@ -65,7 +65,7 @@ namespace DatabaseConnectivity.Controllers
         }
         public void Create()
         {
-            Console Write("Create Region");
+            Console Write("Masukkan nama region");
             string name = Console.ReadLine();
             int isInsertSuccessful = _region.Insert(name);
             if (isInsertSuccessful > 0)
@@ -81,7 +81,7 @@ namespace DatabaseConnectivity.Controllers
         }
         public void GetAll()
         {
-            Console Write("Show All Region");
+            Console Write("Show All Region : ");
             _regionView.All(_region.GetAll());
             Console.ReadKey();
             Console.Clear();
@@ -133,11 +133,11 @@ namespace DatabaseConnectivity.Controllers
             int deleteResult = _region.Delete(id);
             if (deleteResult > 0)
             {
-                Console.WriteLine("Data berhasil dihapus");
+                Console.WriteLine("Data deleted successfully");
             }
             else
             {
-                Console.WriteLine("Data gagal dihapus");
+                Console.WriteLine("Failed to delete data");
             }
 
             Console.ReadKey();

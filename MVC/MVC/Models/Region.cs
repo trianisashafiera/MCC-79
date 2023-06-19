@@ -46,7 +46,7 @@ namespace DatabaseConnectivity.Models
         }
 
 
-        public Region GetRegionById(int id)
+        public Region GetById(int id)
         {
             var conn = Connection.connection;
             List<Region> regions = new List<Region>();

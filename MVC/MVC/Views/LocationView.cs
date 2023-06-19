@@ -1,7 +1,7 @@
-using DatabaseConnectivity.Models
+using DatabaseConnectivity.Models;
+
+namespace DatabaseConnectivity.Views
 {
-    namespace DatabaseConnectivity.Views
-    {
     public class LocationView
     {
         public void GetAll(List<Location> locations)
@@ -18,6 +18,5 @@ using DatabaseConnectivity.Models
             }
         }
 
-    }
     }
 }

@@ -2,13 +2,13 @@ namespace DatabaseConnectivity;
 
 public class LINQ
 {
-    protected Region region = new Region();
-    protected Country country = new Country();
-    protected Location location = new Location();
-    protected Employee employee = new Employee();
-    protected Department department = new Department();
-    protected Job job = new Job();
-    protected History history = new History();
+    public Region region = new Region();
+    public Country country = new Country();
+    public Location location = new Location();
+    public Employee employee = new Employee();
+    public Department department = new Department();
+    public Job job = new Job();
+    public History history = new History();
 
     public void GetEmployees(int limit)
     {

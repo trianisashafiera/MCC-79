@@ -38,7 +38,7 @@ namespace DatabaseConnectivity.Controllers
                             GetAll();
                             break;
                         case 3:
-                            Console.Clear()
+                            Console.Clear();
                             GetById();
                             break;
                         case 4:
@@ -65,7 +65,7 @@ namespace DatabaseConnectivity.Controllers
         }
         public void Create()
         {
-            Console Write("Masukkan nama region");
+            Console.Write("Masukkan nama region : ");
             string name = Console.ReadLine();
             int isInsertSuccessful = _region.Insert(name);
             if (isInsertSuccessful > 0)
@@ -81,7 +81,7 @@ namespace DatabaseConnectivity.Controllers
         }
         public void GetAll()
         {
-            Console Write("Show All Region : ");
+            Console.Write("Show All Region : ");
             _regionView.All(_region.GetAll());
             Console.ReadKey();
             Console.Clear();

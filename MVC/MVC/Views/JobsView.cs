@@ -5,7 +5,7 @@ namespace DatabaseConnectivity.Views
 
     public class jobsView
     {
-        public void GetAll(list<Job> jobs)
+        public void GetAll(list<Jobs> jobs)
         {
             foreach(Jobs job in jobs)
             {

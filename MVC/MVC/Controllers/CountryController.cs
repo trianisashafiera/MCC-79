@@ -64,7 +64,7 @@ namespace DatabaseConnectivity.Controllers
         }
         public void Create()
         {
-            Console Write("Masukkan nama country");
+            Console.Write("Masukkan nama country :");
             string name = Console.ReadLine();
             int isInsertSuccessful = _country.Insert(name);
             if (isInsertSuccessful > 0)
@@ -80,7 +80,7 @@ namespace DatabaseConnectivity.Controllers
         }
         public void GetAll()
         {
-            Console Write("Show All Country : ");
+            Console.Write("Show All Country : ");
             _countryView.All(_country.GetAll());
             Console.ReadKey();
             Console.Clear();

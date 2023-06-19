@@ -46,11 +46,6 @@ public class LINQ
         }
     }
 
-    /*SELECT d.name AS department_name, COUNT(e.department_id) AS total_employee, MIN(e.salary) AS min_salary, MAX(e.salary) AS max_salary, AVG(e.salary) AS average_salary
-    FROM tb_m_employees e RIGHT JOIN tb_m_departments d ON e.department_id = d.id
-        GROUP BY d.name, e.department_id
-        HAVING COUNT(e.department_id) > 3;*/
-
     public void GetDepartments()
     {
         var employees = (from e in employee.GetAllEmployees()

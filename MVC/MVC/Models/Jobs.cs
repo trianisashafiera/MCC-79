@@ -8,7 +8,7 @@ namespace DatabaseConnectivity.Models
         public int maxSalary { get; set; }
 
 
-        public List<Job> GetAllJobs()
+        public List<Jobs> GetAllJobs()
         {
             var conn = Connection.connection;
             List<Job> jobs = new List<Job>();

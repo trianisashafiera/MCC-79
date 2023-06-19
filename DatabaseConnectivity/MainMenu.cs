@@ -92,7 +92,7 @@ namespace DatabaseConnectivity
                         }
                         catch (Exception e)
                         {
-                            Console.WriteLine("Please, input only number not alphabet");
+                            Console.WriteLine("Silakan masukkan pilihan anda");
                             Console.ReadKey();
                             this.CrudMenu();
                         }

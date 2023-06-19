@@ -4,7 +4,7 @@ namespace DatabaseConnectivity.View
 {
     public class EmployeeView
     {
-        public void GetAll(list<Employee>  employees)
+        public void GetAll(list<Employee> employees)
         {
             foreach (Employee employee in employees)
             {
@@ -22,3 +22,4 @@ namespace DatabaseConnectivity.View
             }
         }
     }
+}

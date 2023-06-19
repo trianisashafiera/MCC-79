@@ -10,7 +10,7 @@ namespace DatabaseConnectivity.Controllers
         public Location location = new Location();
         public Employee employee = new Employee();
         public Department department = new Department();
-        public Job job = new Job();
+        public Jobs job = new Job();
         public History history = new History();
 
         public void GetEmployees(int limit)

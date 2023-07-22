@@ -1,3 +1,9 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
 namespace DatabaseConnectivity.Controllers
 {
     public class MainMenuController
@@ -13,8 +19,8 @@ namespace DatabaseConnectivity.Controllers
             Console.WriteLine(" 5. Employee");
             Console.WriteLine(" 6. History");
             Console.WriteLine(" 7. Job");
-            Console.WriteLine(" 8. LINQ Employees");
-            Console.WriteLine(" 9. LINQ Department");
+/*            Console.WriteLine(" 8. LINQ Employees");
+            Console.WriteLine(" 9. LINQ Department");*/
             Console.WriteLine(" 10. Logout");
             try
             {
@@ -22,41 +28,41 @@ namespace DatabaseConnectivity.Controllers
                 int pilihan = Convert.ToInt32(Console.Readline());
                 switch (pilihan)
                 {
-                    case 1 :
+                    case 1:
                         Console.Clear();
                         new RegionController.Menu();
                         break;
-                    case 2 :
+                    case 2:
                         Console.Clear();
-                        new CountryCountroller.Menu();
+                        new CountryController.Menu();
                         break;
-                    case 3 :
+                    case 3:
                         Console.Clear();
                         new LocationController.Menu();
                         break;
-                    case 4 :
+                    case 4:
                         Console.Clear();
                         new DepartmentController.Menu();
                         break;
-                    case 5 :
+                    case 5:
                         Console.Clear();
                         new EmployeeController.Menu();
                         break;
-                    case 6 :
+                    case 6:
                         Console.Clear();
                         new HistoryController.Menu();
                         break;
-                    case 7 :
+                    case 7:
                         Console.Clear();
                         new JobController.Menu();
                         break;
-                    case 8 :
+   /*                 case 8:
                         Console.Clear();
                         new LINQController.Menu();
                         break;
                     case 9:
                         Console.Clear();
-                        new LINQ.getDepartments();
+                        new LINQ.getDepartments();*/
                         break;
                     default:
                         Console.WriteLine("Invalid Input");
@@ -65,7 +71,7 @@ namespace DatabaseConnectivity.Controllers
                 Console.ReadKey();
                 MainMenu();
             }
-            catch (Exception  ex)
+            catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
             }
